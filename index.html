@@ -184,28 +184,63 @@
     .service-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
     .service-card p { color: var(--muted); font-size: 0.93rem; line-height: 1.6; }
 
-    /* ── WHY ── */
-    .why-grid {
+    /* ── VISION / MISSION ── */
+    .vm-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 32px;
-      margin-top: 48px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-bottom: 56px;
     }
-    .why-item { text-align: center; }
-    .why-number {
-      font-size: 2.4rem;
-      font-weight: 800;
-      color: var(--primary);
-      line-height: 1;
-      margin-bottom: 6px;
+    .vm-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
     }
-    .why-item h4 { font-weight: 700; margin-bottom: 6px; }
-    .why-item p { color: var(--muted); font-size: 0.9rem; }
+    .vm-icon {
+      width: 48px;
+      height: 48px;
+      background: #e8f0ff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      font-size: 1.5rem;
+    }
+    .vm-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
+    .vm-card p { color: var(--muted); font-size: 0.93rem; }
+
+    /* ── CORE VALUES ── */
+    .values-heading { font-size: 1.3rem; font-weight: 800; margin-bottom: 24px; }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+    }
+    .value-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: var(--light-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+    }
+    .value-icon {
+      width: 38px;
+      height: 38px;
+      flex-shrink: 0;
+      background: var(--white);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+    .value-item h4 { font-size: 0.95rem; font-weight: 700; }
 
     /* ── CHARTER ── */
-    .charter-block { margin-bottom: 28px; max-width: 720px; }
-    .charter-block h3 { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 6px; }
-    .charter-block p { color: var(--muted); }
     .charter-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -362,32 +397,43 @@
     <h2 class="section-title">Dedicated to Every Patient's Journey</h2>
     <p class="section-sub">We combine specialist expertise with genuine compassion, making world-class oncology care accessible in Eastern Kenya.</p>
 
-    <div class="charter-block">
-      <h3>Our Vision</h3>
-      <p>To be a beacon of hope and healing, delivering compassionate, innovative and patient-centered oncology care that advances cancer treatment and improves lives.</p>
-    </div>
-    <div class="charter-block">
-      <h3>Mission Statement</h3>
-      <p>To provide compassionate, patient-centered oncology care through advanced treatment, expert collaboration, and unwavering support guiding every patient with hope, dignity, and excellence.</p>
+    <div class="vm-grid">
+      <div class="vm-card">
+        <div class="vm-icon">🔭</div>
+        <h3>Our Vision</h3>
+        <p>To be a beacon of hope and healing, delivering compassionate, innovative and patient-centered oncology care that advances cancer treatment and improves lives.</p>
+      </div>
+      <div class="vm-card">
+        <div class="vm-icon">🎯</div>
+        <h3>Mission Statement</h3>
+        <p>To provide compassionate, patient-centered oncology care through advanced treatment, expert collaboration, and unwavering support guiding every patient with hope, dignity, and excellence.</p>
+      </div>
     </div>
 
-    <div class="why-grid">
-      <div class="why-item">
+    <h3 class="values-heading">Our Core Values</h3>
+    <div class="values-grid">
+      <div class="value-item">
+        <div class="value-icon">⭐</div>
         <h4>Quality Service</h4>
       </div>
-      <div class="why-item">
+      <div class="value-item">
+        <div class="value-icon">❤️</div>
         <h4>Patient Centered Care</h4>
       </div>
-      <div class="why-item">
+      <div class="value-item">
+        <div class="value-icon">🤝</div>
         <h4>Integrity &amp; Trust</h4>
       </div>
-      <div class="why-item">
+      <div class="value-item">
+        <div class="value-icon">💡</div>
         <h4>Innovation &amp; Hope</h4>
       </div>
-      <div class="why-item">
+      <div class="value-item">
+        <div class="value-icon">🧑‍🤝‍🧑</div>
         <h4>Collaboration</h4>
       </div>
-      <div class="why-item">
+      <div class="value-item">
+        <div class="value-icon">🏅</div>
         <h4>Professionalism</h4>
       </div>
     </div>
