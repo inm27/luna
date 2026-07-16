@@ -202,6 +202,24 @@
     .why-item h4 { font-weight: 700; margin-bottom: 6px; }
     .why-item p { color: var(--muted); font-size: 0.9rem; }
 
+    /* ── CHARTER ── */
+    .charter-block { margin-bottom: 28px; max-width: 720px; }
+    .charter-block h3 { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 6px; }
+    .charter-block p { color: var(--muted); }
+    .charter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+    }
+    .charter-col {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+    }
+    .charter-col h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 14px; }
+    .charter-col ol { padding-left: 20px; display: flex; flex-direction: column; gap: 10px; color: var(--muted); font-size: 0.93rem; }
+
     /* ── CONTACT ── */
     #contact { background: var(--light-bg); }
     .contact-grid {
@@ -279,6 +297,7 @@
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#charter">Patient Charter</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -303,34 +322,34 @@
     <p class="section-sub">From early screening to advanced treatment and ongoing support, our team is with you at every step.</p>
     <div class="services-grid">
       <div class="service-card">
-        <div class="service-icon">🔬</div>
-        <h3>Cancer Screening &amp; Early Detection</h3>
-        <p>Routine screening programmes for breast, cervical, prostate and colorectal cancers to catch disease at its most treatable stage.</p>
+        <div class="service-icon">🩺</div>
+        <h3>Oncology Consultations</h3>
+        <p>Specialist consultations to assess, diagnose and plan treatment with our oncology team.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">💊</div>
-        <h3>Chemotherapy</h3>
-        <p>Evidence-based chemotherapy regimens administered by specialist nurses and oncologists in a safe, monitored environment.</p>
+        <h3>Day Care Chemotherapy Infusion</h3>
+        <p>Chemotherapy administered by specialist nurses and oncologists in a safe, monitored day care setting.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon">🩻</div>
-        <h3>Diagnosis &amp; Pathology</h3>
-        <p>Comprehensive laboratory investigations, biopsy analysis and imaging review to establish accurate diagnoses and staging.</p>
+        <div class="service-icon">💉</div>
+        <h3>Oncology Pharmacy</h3>
+        <p>Dedicated pharmacy services ensuring safe dispensing and management of oncology medication.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔬</div>
+        <h3>Laboratory</h3>
+        <p>Comprehensive laboratory investigations to support diagnosis, staging and ongoing monitoring.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">🤝</div>
-        <h3>Palliative &amp; Supportive Care</h3>
+        <h3>Psychosocial &amp; Palliative Support</h3>
         <p>Holistic pain management and psychosocial support to improve quality of life for patients and their families.</p>
       </div>
       <div class="service-card">
-        <div class="service-icon">📋</div>
-        <h3>SHA &amp; Insurance Liaison</h3>
-        <p>We work directly with the Social Health Authority (SHA) and major insurers to ease the financial burden of cancer treatment.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">📅</div>
-        <h3>Follow-Up &amp; Survivorship</h3>
-        <p>Structured follow-up programmes with scheduled reviews, ongoing monitoring and long-term survivorship planning.</p>
+        <div class="service-icon">🥗</div>
+        <h3>Nutrition &amp; Diet Support</h3>
+        <p>Personalised nutrition and dietary guidance to support patients through treatment and recovery.</p>
       </div>
     </div>
   </div>
@@ -342,26 +361,67 @@
     <div class="section-label">Why Luna</div>
     <h2 class="section-title">Dedicated to Every Patient's Journey</h2>
     <p class="section-sub">We combine specialist expertise with genuine compassion, making world-class oncology care accessible in Eastern Kenya.</p>
+
+    <div class="charter-block">
+      <h3>Our Vision</h3>
+      <p>To be a beacon of hope and healing, delivering compassionate, innovative and patient-centered oncology care that advances cancer treatment and improves lives.</p>
+    </div>
+    <div class="charter-block">
+      <h3>Mission Statement</h3>
+      <p>To provide compassionate, patient-centered oncology care through advanced treatment, expert collaboration, and unwavering support guiding every patient with hope, dignity, and excellence.</p>
+    </div>
+
     <div class="why-grid">
       <div class="why-item">
-        <div class="why-number">100%</div>
-        <h4>Patient-Centred Care</h4>
-        <p>Every treatment plan is built around the individual patient, not a protocol.</p>
+        <h4>Quality Service</h4>
       </div>
       <div class="why-item">
-        <div class="why-number">SHA</div>
-        <h4>Accredited Facility</h4>
-        <p>Fully registered and accredited for Social Health Authority claims.</p>
+        <h4>Patient Centered Care</h4>
       </div>
       <div class="why-item">
-        <div class="why-number">EAK</div>
-        <h4>Local Expertise</h4>
-        <p>Serving Machakos and surrounding counties with a team that understands the local context.</p>
+        <h4>Integrity &amp; Trust</h4>
       </div>
       <div class="why-item">
-        <div class="why-number">24/7</div>
-        <h4>Support Available</h4>
-        <p>Our care team is reachable by phone for urgent queries and follow-up concerns.</p>
+        <h4>Innovation &amp; Hope</h4>
+      </div>
+      <div class="why-item">
+        <h4>Collaboration</h4>
+      </div>
+      <div class="why-item">
+        <h4>Professionalism</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PATIENT RIGHTS & RESPONSIBILITIES -->
+<section id="charter" style="background: var(--light-bg);">
+  <div class="container">
+    <div class="section-label">Hospital Charter</div>
+    <h2 class="section-title">Patient Rights &amp; Responsibilities</h2>
+    <p class="section-sub">We are committed to upholding the following rights and responsibilities for every patient in our care.</p>
+    <div class="charter-grid">
+      <div class="charter-col">
+        <h3>Patient Rights</h3>
+        <ol>
+          <li>Right to be treated with dignity, courtesy, and respect with no discrimination.</li>
+          <li>Right to information on your health condition, diagnosis, treatment and expected outcome.</li>
+          <li>Right to information on expected turnaround time for different services.</li>
+          <li>Right to consent to or refuse a treatment procedure.</li>
+          <li>Right to seek a second medical opinion.</li>
+          <li>Right to protection, confidentiality and privacy.</li>
+        </ol>
+      </div>
+      <div class="charter-col">
+        <h3>Patient Responsibilities</h3>
+        <ol>
+          <li>To treat hospital staff and other clients with respect and dignity.</li>
+          <li>Provide relevant information to health care providers to guide their treatment plan.</li>
+          <li>Seek information and clarifications from health care providers regarding their treatment.</li>
+          <li>Comply with treatment and medical instructions and adhere to follow-up appointments.</li>
+          <li>Timely payment for all services received.</li>
+          <li>Maintaining a safe and hygienic environment and protecting the property of the health facility.</li>
+        </ol>
       </div>
     </div>
   </div>
@@ -403,6 +463,13 @@
             <span>Monday – Friday: 8:00 AM – 5:00 PM<br>Saturday: 8:00 AM – 1:00 PM</span>
           </div>
         </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">💬</div>
+          <div class="contact-item-text">
+            <strong>Feedback (WhatsApp)</strong>
+            <a href="https://wa.me/254798111232" target="_blank" rel="noopener">0798 111 232</a>
+          </div>
+        </div>
       </div>
       <div class="map-container">
         <iframe
@@ -422,6 +489,7 @@
   <div class="footer-links">
     <a href="#services">Services</a>
     <a href="#about">About</a>
+    <a href="#charter">Patient Charter</a>
     <a href="#contact">Contact</a>
   </div>
   <p>&copy; <span id="yr"></span> <strong>Luna Cancer Centre</strong> · Machakos, Kenya · <a href="tel:+254798111232">+254 798 111 232</a></p>
