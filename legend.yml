@@ -1,0 +1,31 @@
+# legend.yml — read by Legend to show this app's architecture and health.
+# See templates/APP_INSTRUCTIONS.md (in the Legend repo) for the rules to
+# follow when keeping this file current.
+#
+# This is the public marketing site. The patient management portal is a
+# separate app tracked separately — see inm27/oncology-hms-ke.
+
+name: Luna Cancer Centre — Public Site
+description: Public informational site for Luna Cancer Centre — hospital charter, services, mission/vision/values, patient rights, and contact info.
+
+domain:
+  name: lunacancercentre.com
+  registrar: Cloudflare Registrar
+  dns: Cloudflare
+
+health:
+  url: https://lunacancercentre.com/
+  method: GET
+  expect_status: 200
+
+layers:
+  - type: frontend
+    platform: web
+    tech: Static HTML/CSS (no framework)
+    hosting: Cloudflare Workers (static assets)
+
+functions:
+  - Hospital charter, services, mission/vision/values
+  - Patient rights & responsibilities
+  - WhatsApp feedback channel
+  - Location/contact info with map embed
