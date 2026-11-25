@@ -14,7 +14,10 @@ domain:
   dns: Cloudflare
 
 health:
-  url: https://lunacancercentre.com/
+  # The Worker's own address, not lunacancercentre.com: Bot Fight Mode on the
+  # zone challenges Legend's automated check (403, cf-mitigated: challenge) and
+  # the free plan cannot exempt it. This checks the site, not the domain's DNS/TLS.
+  url: https://luna.ivymuregi.workers.dev/
   method: GET
   expect_status: 200
 
